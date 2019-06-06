@@ -1,0 +1,171 @@
+/* PAGE STYLE */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    background:#DFE2EB;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40;
+}
+/* HEADER */
+h1 {
+    font-size: 40px;
+    color: black;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+h2 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 30px;
+  line-height: 10px;
+  text-align: center;
+}
+/* NAVIGATION */
+li a {
+  text-decoration: inherit;
+}
+nav {
+  background: #f07f07;
+  width: 100%
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 5px;
+  transition: all 300ms ease-in;
+}
+nav ul li {
+  padding: 10px;
+}
+nav a {
+  text-decoration: none;
+}
+a {
+  color: black;
+}
+a:hover {
+  color:	#696969;
+}
+p.special {
+  color: #696969;
+}
+/* MAIN IMAGE */
+.header-wrapper {
+  width: 100%
+  display: block;
+}
+.mainimage {
+  align-items: center;
+  display: flex;
+}
+.mainimage img {
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+}
+/*image gallery wrapper*/
+.image-wrapper {
+  width: 100%;
+  display: block;
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.gallery img{
+  width: 33.33%;
+  padding: 50px;
+}
+/* carousel images */
+.carousel {
+  width: 100%;
+  display: flex;
+  align-items: center; /*this part is not aligning*/
+}
+.flexslider {
+  padding: 10px;
+  width: 30%;
+}
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #f07f07;
+  padding: 25px;
+}
+.ig {
+  color: green;
+}
+/* CONTACT US FORM */
+form {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 25px;
+  max-width: 600px;
+}
+input{
+  border: 1px solid grey;
+}
+input[type="text"] {
+  padding: 6px;
+}
+input:focus {
+  border: 2px;
+}
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 960px) {
+    .wrapper {
+        padding: 1% 10%;
+    }
+    header h1 {
+        font-size: 18px;
+    }
+}
+.hamburger,
+.close {
+    display: none;
+}
+@media (max-width: 650px) {
+    .hamburger,
+    .close {
+        display: block;
+        font-size: 24px;
+        font-family: "Lucida Sans Unicode", "Arial Unicode MS";
+    }
+    ul.main-nav {
+        top: -100vh;
+        margin-top: 0;
+        position: fixed;
+    }
+    ul.main-nav li {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        width: 100%;
+    }
+    .main-nav.open-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 2% 10%;
+        z-index: 2;
+        background: #393737;
+        width: 100%;
+        height: 100vh;
+    }
+    .open-nav a {
+        color: white;
+    }
+    .about {
+        padding: 10px;
+    }
+    nav {
+        text-align: right;
+    }
+}
